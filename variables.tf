@@ -13,7 +13,7 @@ variable "db_password" {
 variable "environment" {
   description = "Environment name used for resource tagging and naming"
   type        = string
-  default     = "prod"
+  default     = "test"
 }
 
 variable "aws_region" {
