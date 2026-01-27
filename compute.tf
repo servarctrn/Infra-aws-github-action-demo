@@ -94,6 +94,7 @@ resource "aws_launch_template" "web" {
     apt-get install -y apache2
     systemctl enable apache2
     systemctl start apache2
+    echo "AWS Solutions Architect RULES**** Testing my DevOps CI/CD User-data. $(hostname -f)" > /var/www/html/index.html
   EOF
   )
 
